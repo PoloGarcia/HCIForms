@@ -1,0 +1,17 @@
+@import 'settings';
+
+input {
+    display: block;
+    margin: 0;
+    padding: 0 0 0.15em;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    background-color:  rgba(#78909C,0.1);
+    color: #212121;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 0;
+    outline: none;
+}
