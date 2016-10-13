@@ -33,11 +33,11 @@
         </div>
         <div id="questions-wrapper">
             <div class="question-item">
-                <h2 class="to-answer">Fill the following information</h2>
+                <h2 class="to-answer">Ingresa tu email</h2>
                 <input type="email" required>
             </div>
             <div class="question-item">
-                <h2 class="to-answer">Fill the following information 2</h2>
+                <h2 class="to-answer">¿Quien eres? Ingresa tu nombre</h2>
                 <input type="text" required>
             </div>
             <div class="question-item">
@@ -50,15 +50,41 @@
             </div>
             <div class="question-item">
                 <h2 class="to-answer">Selecciona uno de los siguientes</h2>
-                <input type="radio" name="gender" value="male" required> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
-                <input type="radio" name="gender" value="other"> Other
+                <div class="option-field">
+                    <div class="option">
+                        <input type="radio" name="gender" value="male" id="opt_a" required>
+                        <label for="opt_a">Male</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gender" value="female" id="opt_b">
+                        <label for="opt_b">Female</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gender" value="other" id="opt_c">
+                        <label for="opt_c">Other</label>
+                    </div>
+                </div>
             </div>
             <div class="question-item">
-                <h2 class="to-answer">Selecciona varios de los siguientes</h2>
-                <input type="checkbox" name="gender" value="male"> Male<br>
-                <input type="checkbox" name="gender" value="female" required> Female<br>
-                <input type="checkbox" name="gender" value="other"> Other
+                <h2 class="to-answer">¿Que de estos te gustaria ganar?</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="male" id="opt_1" required>
+                        <label for="opt_1">iphone</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="female" id="opt_2">
+                        <label for="opt_2">ipad</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="other" id="opt_3">
+                        <label for="opt_3">Dinero</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="other" id="opt_4">
+                        <label for="opt_4">Lo que sea es bueno</label>
+                    </div>
+                </div>
             </div>
             <div id='thanks-message'>
                 <h1>Thanks for answering this form</h1>
