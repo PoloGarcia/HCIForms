@@ -16,6 +16,88 @@ HCI Forms took inspiration from how CSS frameworks manage their JS such as Boots
 
 In this section we provide examples of how the library work and the supported type of questions in this current version. 
 
+#### Basic HTML structure
+Here we provide the basic structure of HCI form. 
+
+```html
+<body>
+    <script src="public/js/FPForm.js"></script>
+    <div id="form-wrapper">
+        <div id="advance-bar">
+        </div>
+        <div id="header" class="medium-unstack"> 
+            <h4>Here is your title</h4>
+            <!-- Advance bar starts-->
+            <div class="advance"> 
+                <span class="answered-questions">0</span>
+                <span class="slash">/</span>
+                <span class="total-questions">0</span>
+            </div>
+            <!-- Advance bar ends-->
+        </div>
+        <div id="questions-wrapper"> <!-- All your questions should be contained inside a tag with this class -->
+            <div class="question-item"> <!-- Each question needs to be wrapped by the .question-item class -->
+                <h2 class="to-answer">Ingresa tu email</h2> <!-- This class defines that this is your question, JS script adds * to required questions -->
+                <input type="email" required>
+            </div>
+            <div class="question-item">
+                <h2 class="to-answer">Selecciona uno de los siguientes</h2>
+                <div class="option-field"> <!-- If your question consist of a set of answers (radio or checkbox), add this class -->
+                    <div class="option"> <!-- Every option needs to be wrapped by the .option class -->
+                        <input type="radio" name="gender" value="male" id="opt_a" required>
+                        <label for="opt_a">Male</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gender" value="female" id="opt_b">
+                        <label for="opt_b">Female</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gender" value="other" id="opt_c">
+                        <label for="opt_c">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question-item">
+                <h2 class="to-answer">¿Que de estos te gustaria ganar?</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="male" id="opt_1" required>
+                        <label for="opt_1">iphone</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="female" id="opt_2">
+                        <label for="opt_2">ipad</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="other" id="opt_3">
+                        <label for="opt_3">Dinero</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="other" id="opt_4">
+                        <label for="opt_4">Lo que sea es bueno</label>
+                    </div>
+                </div>
+            </div>
+            <div id='thanks-message'> <!-- This is your end message, thanks your user for taking the time to answer your survey  -->
+                <h1>Thanks for answering this form</h1>
+            </div>
+        </div>
+        <!-- Footer block starts  -->
+        <div id="footer">
+            <div class="controls">
+                <button class="large hollow button" id="previous">previous</button>
+                <button class="large hollow button" id="next">Continue</button>
+                <button class="large hollow success button" id="submit">Submit</button>
+            </div>
+            <div class="anotation">
+                <span>puedes presionar enter para continuar o las flechas &#8592; &#8594; para navegar</span>
+            </div>
+        </div>
+        <!-- Footer block ends -->
+    </div>
+</body>
+```
+
 #### Open ended question
 We define open ended questions are those that provide an input field to enter the question you want to, this current version only provides input validation for the following type of inputs:  **email, number, text and date**
 
@@ -38,24 +120,20 @@ Here is a simple stencil to base your questions:
 
 ```html
 <div class="question-item">
-                <h2 class="to-answer">¿Que de estos te gustaria ganar?</h2>
-                <div class="option-field">
-                    <div class="option">
-                        <input type="checkbox" name="gender" value="male" id="opt_1" required>
-                        <label for="opt_1">iphone</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="gender" value="female" id="opt_2">
-                        <label for="opt_2">ipad</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="gender" value="other" id="opt_3">
-                        <label for="opt_3">Dinero</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="gender" value="other" id="opt_4">
-                        <label for="opt_4">Lo que sea es bueno</label>
-                    </div>
-                </div>
-            </div>
+    <h2 class="to-answer">Whats your gender?</h2>
+    <div class="option-field">
+        <div class="option">
+            <input type="checkbox" name="gender" value="male" id="opt_1" required>
+                <label for="opt_1">iphone</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" name="gender" value="female" id="opt_2">
+            <label for="opt_2">ipad</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" name="gender" value="other" id="opt_3">
+            <label for="opt_3">Dinero</label>
+        </div>     
+    </div>
+</div>
 ```
