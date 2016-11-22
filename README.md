@@ -97,6 +97,24 @@ Here we provide the basic structure of HCI form. Please read the HTML comments i
     </div>
 </body>
 ```
+#### CSS classes structure
+
+The basic classes that should compose an HCI form are represented in the following tree as well as the HTML blocks that should exist in the HTML. Following this section you'll be able to find pasteable snippets of code for each element.
+
+```bash 
+<body>
+|   .form-wrapper
+|   [advance bar HTML block}
+|   [header HTML block]
+|   .questions-wrapper
+|   |   .question-item
+|   |   .to-answer
+|   |   <input> or .option-field
+|   |   |   .option
+|   |   |   |   <checkbox> or <radio>
+|   |   |   |   <label>
+|   [footer HTML block]
+```
 
 #### Open ended question
 We define open ended questions are those that provide an input field to enter the question you want to, this current version only provides input validation for the following type of inputs:  **email, number, text and date**
