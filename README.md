@@ -17,7 +17,7 @@ HCI Forms took inspiration from how CSS frameworks manage their JS such as Boots
 In this section we provide examples of how the library work and the supported type of questions in this current version. 
 
 #### Basic HTML structure
-Here we provide the basic structure of HCI form. 
+Here we provide the basic structure of HCI form. Please read the HTML comments in order to understand what each class does.
 
 ```html
 <body>
@@ -137,3 +137,4 @@ Here is a simple stencil to base your questions:
     </div>
 </div>
 ```
+## Happy coding, if you are interested in colaborating to this project hit me up. And if you find a bug register the issue, I'll be forever thankful if you do so.
