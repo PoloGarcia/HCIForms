@@ -44,9 +44,9 @@
 
 @import 'single-page';
 @import 'forms-styles';
+@import 'all-page';
 
 body{
   @include flex-grid-column(12, 0px);
   background-color: #F5F5F5;
-  
 }

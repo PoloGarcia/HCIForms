@@ -4,18 +4,26 @@
 
 <head>
     <meta charset="utf-8">
-
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
     <link rel="stylesheet" href="public/css/source/main.css">
     <script src="public/js/validator.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <title>Calidad de campus (ST)</title>
+    <meta name="description" content="">
+    <meta name="author" content="Leopoldo Garcia">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <!-- Begin Inspectlet Embed Code -->
+<script type="text/javascript" id="inspectletjs">
+window.__insp = window.__insp || [];
+__insp.push(['wid', 1348110045]);
+(function() {
+function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+})();
+</script>
+<!-- End Inspectlet Embed Code -->
 </head>
 
 <body>
@@ -24,7 +32,7 @@
         <div id="advance-bar">
         </div>
         <div id="header" class="medium-unstack">
-            <h4>Questionarie title</h4>
+            <h4>Campus ITESM CQ</h4>
             <div class="advance">
                 <span class="answered-questions">0</span>
                 <span class="slash">/</span>
@@ -32,75 +40,204 @@
             </div>
         </div>
         <div id="questions-wrapper">
+
             <div class="question-item">
-                <h2 class="to-answer">Ingresa tu email</h2>
-                <input type="email" required>
+                <h2 class="to-answer">¿Que semestre te encuentras cursando?</h2>
+                <input type="number" required>
             </div>
+
             <div class="question-item">
-                <h2 class="to-answer">¿Quien eres? Ingresa tu nombre</h2>
+                <h2 class="to-answer">¿Que carrera estudias?</h2>
                 <input type="text" required>
             </div>
+
             <div class="question-item">
-                <h2 class="to-answer">Fill the following information 3</h2>
-                <input type="text">
-            </div>
-            <div class="question-item">
-                <h2 class="to-answer">Fill the following information 4</h2>
-                <input type="text">
-            </div>
-            <div class="question-item">
-                <h2 class="to-answer">Selecciona uno de los siguientes</h2>
+                <h2 class="to-answer">¿Haz cursado toda tu carrera en este campus?</h2>
                 <div class="option-field">
                     <div class="option">
-                        <input type="radio" name="gender" value="male" id="opt_a" required>
-                        <label for="opt_a">Male</label>
+                        <input type="radio" name="all-campus" value="yes" id="campusyes" required>
+                        <label for="campusyes">Si</label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="gender" value="female" id="opt_b">
-                        <label for="opt_b">Female</label>
-                    </div>
-                    <div class="option">
-                        <input type="radio" name="gender" value="other" id="opt_c">
-                        <label for="opt_c">Other</label>
+                        <input type="radio" name="all-campus" value="no" id="campusno" required>
+                        <label for="campusno">No</label>
                     </div>
                 </div>
             </div>
+
             <div class="question-item">
-                <h2 class="to-answer">¿Que de estos te gustaria ganar?</h2>
+                <h2 class="to-answer">¿Haz comido en alguna de las cafeterías dentro del campus?</h2>
                 <div class="option-field">
                     <div class="option">
-                        <input type="checkbox" name="gender" value="male" id="opt_1" required>
-                        <label for="opt_1">iphone</label>
+                        <input type="radio" name="haveeat" value="yes" id="cafeteriayes" required>
+                        <label for="cafeteriayes">Si</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" name="gender" value="female" id="opt_2">
-                        <label for="opt_2">ipad</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="gender" value="other" id="opt_3">
-                        <label for="opt_3">Dinero</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" name="gender" value="other" id="opt_4">
-                        <label for="opt_4">Lo que sea es bueno</label>
+                        <input type="radio" name="haveeat" value="no" id="cafeteriano" required>
+                        <label for="cafeteriano">No</label>
                     </div>
                 </div>
             </div>
-            <div id='thanks-message'>
-                <h1>Thanks for answering this form</h1>
+
+            <div class="question-item">
+                <h2 class="to-answer">En caso de haber respondido si, a la anterior. Consideras que la comida servida fue:</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="radio" name="cafeteriaQG" id="cafeteriaBuena">
+                        <label for="cafeteriaBuena">Calidad Buena</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="cafeteriaQG" id="cafeteriaRegular">
+                        <label for="cafeteriaRegular">Calidad regular</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="cafeteriaQG" id="cafeteriaMala">
+                        <label for="cafeteriaMala">Calidad Mala</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">Selecciona las características que para ti son mas importantes cuando asistes a comer a cualquier lugar:</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="checkbox" id="cafeteriaattr1" required>
+                        <label for="cafeteriaattr1">Precio</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="cafeteriaattr2">
+                        <label for="cafeteriaattr2">Variedad de opciones</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="cafeteriaattr3">
+                        <label for="cafeteriaattr3">Servicio rapido</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="cafeteriaattr4">
+                        <label for="cafeteriaattr4">Opciones de combos</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="cafeteriaattr5">
+                        <label for="cafeteriaattr5">Sabor</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">Cual de las cafeterías del campus considerarías es la mejor y por que razón? Ingresa su nombre o referencia (ej. La de arquitectura)</h2>
+                <input type="text">
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">¿Haz utilizado los servicios de biblioteca en el campus?</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="radio" name="haveBiblio" value="yes" id="biblioyes" required>
+                        <label for="biblioyes">Si</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="haveBiblio" value="no" id="bibliono" required>
+                        <label for="bibliono">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">Este semestre aproximadamente ¿cuantas veces haz visitado biblioteca?</h2>
+                <input type="number" required>
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">¿Haz hecho uso de la biblioteca digital (bases de datos) en alguno de tus semestres?</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="radio" name="haveBiblioDigital" value="yes" id="biblioDyes" required>
+                        <label for="biblioDyes">Si</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="haveBiblioDigital" value="no" id="biblioDno" required>
+                        <label for="biblioDno">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">Consideras que en general la biblioteca del campus es:</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="radio" name="biblioQG" id="bibliotecaattr" required><label for="bibliotecaattr">Excelente</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="biblioQG" id="bibliotecaattr2"><label for="bibliotecaattr2">Buena</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="biblioQG" id="bibliotecaattr3"><label for="bibliotecaattr3">Regular</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="biblioQG" id="bibliotecaattr4"><label for="bibliotecaattr4">Mala</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="biblioQG" id="bibliotecaattr5"><label for="bibliotecaattr5">Pesima</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">¿Que mejorarías del actual servicio de biblioteca? (En una oracion)</h2>
+                <input type="text">
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">¿Haz hecho uso de instalaciones deportivas dentro del campus?</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="radio" name="haveSports" value="yes" id="sportsyes" required><label for="sportsyes">Si</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="haveSports" value="no" id="sportsno" required><label for="sportsno">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">Cuales instalaciones haz usado (ej. Gimnasio, Pista de atletismo)</h2>
+                <input type="text">
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">De las instalaciones que usaste consideras que estaban mantenidas:</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="radio" name="qualitySports" value="good" id="QsportsG"><label for="QsportsG">Debidamente</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="qualitySports" value="bad" id="QsportsR"><label for="QsportsR">Normal</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="qualitySports" value="bad" id="QsportsB"><label for="QsportsB">Descuidadas</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <h2 class="to-answer">¿Si tuvieras que hacer una recomendación para las actividades o instalaciones deportivas cual seria?</h2>
+                <input type="text">
+            </div>
+
+            <div id="thanks-message">
+                <h1>Gracias por contestar esta encuesta</h1>
             </div>
         </div>
         <div id="footer">
             <div class="controls">
-                <button class="large hollow button" id="previous">previous</button>
-                <button class="large hollow button" id="next">Continue</button>
-                <button class="large hollow success button" id="submit">Submit</button>
+                <button class="large hollow button" id="previous">Anterior</button>
+                <button class="large hollow button" id="next">Siguiente</button>
+                <button class="large hollow success button" id="submit">Completar</button>
             </div>
             <div class="anotation">
                 <span>puedes presionar enter para continuar o las flechas &#8592; &#8594; para navegar</span>
             </div>
         </div>
-    </div>
     </div>
 </body>
 

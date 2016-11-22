@@ -218,7 +218,7 @@ function add_instructions(question_to_check) {
             'Selecciona una de las siguientes opciones' :
             'Selecciona una o mas de las siguientes opciones';
         span_instructions += ' (puedes presionar la tecla debajo de cada opcion, para seleccionarla)';
-        $(question_to_check.find('.to-answer')[0]).after('<span class=\'help-text\'>'+ span_instructions + '</span>');
+        $(question_to_check.find('.to-answer')[0]).after('<span class=\'help-text\'>' + span_instructions + '</span>');
         for (var i = 0, len = question_to_check.find('.option').length; i < len; i++) {
             console.log(i);
             var span = $('<span></span>');
@@ -282,8 +282,8 @@ $(document).ready(function() {
                     } else {
                         $('#next').trigger("click");
                     }
-                    break;
                 }
+                break;
             case 65:
             case 66:
             case 67:

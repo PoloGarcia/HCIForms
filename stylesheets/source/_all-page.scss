@@ -1,0 +1,26 @@
+.all-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.questionnarie-body {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+
+  .question-lb {
+    margin-bottom: 25px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"]{
+    width: auto !important;
+    display: inline-block;
+  }
+
+  fieldset{
+    margin-bottom: 25px;
+  }
+}

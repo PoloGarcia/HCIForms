@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="public/css/source/main.css">
+    <script src="public/js/validator.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <title>Calidad de campus (ST)</title>
+    <!-- Begin Inspectlet Embed Code -->
+    <script type="text/javascript" id="inspectletjs">
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 427983078]);
+        (function() {
+            function ldinsp() {
+                if (typeof window.__inspld != "undefined") return;
+                window.__inspld = 1;
+                var insp = document.createElement('script');
+                insp.type = 'text/javascript';
+                insp.async = true;
+                insp.id = "inspsync";
+                insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(insp, x);
+            };
+            setTimeout(ldinsp, 500);
+            document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+        })();
+    </script>
+    <!-- End Inspectlet Embed Code -->
+    <meta name="description" content="">
+    <meta name="author" content="Leopoldo Garcia">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <script src="public/js/FPForm.js"></script>
+    <div id="form-wrapper">
+        <div id="advance-bar">
+        </div>
+        <div id="header" class="medium-unstack">
+            <h4>Campus ITESM CQ</h4>
+            <div class="advance">
+                <span class="answered-questions">0</span>
+                <span class="slash">/</span>
+                <span class="total-questions">0</span>
+            </div>
+        </div>
+        <div id="questions-wrapper">
+            <div class="question-item">
+                <h2 class="to-answer">Ingresa tu email</h2>
+                <input type="email" required>
+            </div>
+            <div class="question-item">
+                <h2 class="to-answer">¿Quien eres? Ingresa tu nombre</h2>
+                <input type="text" required>
+            </div>
+            <div class="question-item">
+                <h2 class="to-answer">Fill the following information 3</h2>
+                <input type="text">
+            </div>
+            <div class="question-item">
+                <h2 class="to-answer">Fill the following information 4</h2>
+                <input type="text">
+            </div>
+            <div class="question-item">
+                <h2 class="to-answer">Selecciona uno de los siguientes</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="radio" name="gender" value="male" id="opt_a" required>
+                        <label for="opt_a">Male</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gender" value="female" id="opt_b">
+                        <label for="opt_b">Female</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gender" value="other" id="opt_c">
+                        <label for="opt_c">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question-item">
+                <h2 class="to-answer">¿Que de estos te gustaria ganar?</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="male" id="opt_1" required>
+                        <label for="opt_1">iphone</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="female" id="opt_2">
+                        <label for="opt_2">ipad</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="other" id="opt_3">
+                        <label for="opt_3">Dinero</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="other" id="opt_4">
+                        <label for="opt_4">Lo que sea es bueno</label>
+                    </div>
+                </div>
+            </div>
+            <div id='thanks-message'>
+                <h1>Thanks for answering this form</h1>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="controls">
+                <button class="large hollow button" id="previous">previous</button>
+                <button class="large hollow button" id="next">Continue</button>
+                <button class="large hollow success button" id="submit">Submit</button>
+            </div>
+            <div class="anotation">
+                <span>puedes presionar enter para continuar o las flechas &#8592; &#8594; para navegar</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
