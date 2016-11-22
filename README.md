@@ -30,3 +30,32 @@ Here is simple stencil of how your open ended question should look
 
 ``` 
 As seen in the example please make sure to specify the type attribute of the input tag in order to validate correctly. 
+
+#### Optipon field questions
+In the current version of the library we support up to 5 answer options per question. 
+
+Here is a simple stencil to base your questions:
+
+```html
+<div class="question-item">
+                <h2 class="to-answer">¿Que de estos te gustaria ganar?</h2>
+                <div class="option-field">
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="male" id="opt_1" required>
+                        <label for="opt_1">iphone</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="female" id="opt_2">
+                        <label for="opt_2">ipad</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="other" id="opt_3">
+                        <label for="opt_3">Dinero</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="gender" value="other" id="opt_4">
+                        <label for="opt_4">Lo que sea es bueno</label>
+                    </div>
+                </div>
+            </div>
+```
